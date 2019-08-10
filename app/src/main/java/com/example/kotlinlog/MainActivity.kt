@@ -1,6 +1,6 @@
 package com.example.kotlinlog
 
-import android.support.
+
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
