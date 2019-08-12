@@ -11,16 +11,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val num=60
 
-        if (num>=90) {
-            Log.d("kotlintest","優")
-        }else if (num>=75){
-            Log.d("kotlintest","良")
-        }else if (num>=60){
-            Log.d("kotlintest","可")
-        }else
-           Log.d("kotlintest","不可")
-
+        total(50,1000)
+        total(1)
     }
+        private fun total(first:Int,last:Int= 1000) {
+            var sum = 0
+            for (i in first..last) {
+                sum += i
+            }
+            Log.d("kotlintest", sum .toString())
+        }
+
+
+
+
+
+
+
+
+
 }
